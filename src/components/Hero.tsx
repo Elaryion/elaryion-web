@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="bg-white container mx-auto px-4 py-36 flex flex-col md:flex-row items-center justify-between">
+    <section className="bg-white container mx-auto px-4 py-36 flex flex-col md:flex-row items-center justify-between font-poppins">
       <motion.div
         className="md:w-1/2"
         initial={{ opacity: 0, x: -50 }}
@@ -17,7 +17,7 @@ export default function Hero() {
           Discover Your Beauty!
         </h1>
         <p className="text-secondary mb-6">
-          Discover the science behind your skin's health. Our app provides comprehensive skin analysis and personalized care recommendations, helping you to achieve your best skin ever.
+          Discover the science behind your skin&apos;s health. Our app provides comprehensive skin analysis and personalized care recommendations, helping you to achieve your best skin ever.
         </p>
         <motion.button
           className="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary-hover"
