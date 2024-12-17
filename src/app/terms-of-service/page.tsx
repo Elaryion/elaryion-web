@@ -11,18 +11,18 @@ export default function TermsOfService() {
     <main>
       <NavbarOther />
       {/* Hero Section */}
-      <section className="py-40" style={{ backgroundImage: "url('https://i.hizliresim.com/rxrnmdp.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-40" style={{ backgroundImage: "url('https://i.hizliresim.com/rxrnmdp.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration:0.6 }}
-            className="max-w-3xl text-white pl-6 border-l-4 border-white"
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl text-white pl-4 md:pl-6 border-l-2 md:border-l-4 border-white"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
               Terms of Service
             </h1>
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm md:text-base leading-relaxed">
               Please read these terms and conditions carefully before using our services. By accessing or using Elaryion&apos;s services, you agree to be bound by these terms.
             </p>
           </motion.div>
