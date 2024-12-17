@@ -23,7 +23,7 @@ export default function TermsOfService() {
               Terms of Service
             </h1>
             <p className="text-sm leading-relaxed">
-              Please read these terms and conditions carefully before using our services. By accessing or using Elaryion's services, you agree to be bound by these terms.
+              Please read these terms and conditions carefully before using our services. By accessing or using Elaryion&apos;s services, you agree to be bound by these terms.
             </p>
           </motion.div>
         </div>

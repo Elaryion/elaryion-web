@@ -48,12 +48,12 @@ export default function NavbarOther() {
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/#features"
                 className="text-white font-medium"
               >
                 Features
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -138,13 +138,13 @@ export default function NavbarOther() {
               </Link>
             </li>
             <li className="py-2">
-              <a 
+              <Link 
                 href="/#features" 
                 className="block text-white hover:text-blue-200 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Features
-              </a>
+              </Link>
             </li>
           </motion.ul>
         </div>

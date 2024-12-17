@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 export default function Features() {
@@ -55,6 +54,7 @@ export default function Features() {
                     loading="lazy"
                     src={feature.icon}
                     className="object-contain w-10 aspect-square"
+                    alt={`${feature.title} icon`}
                   />
                 </div>
                 <div className="flex-1 shrink self-stretch my-auto text-l font-semibold text-orange-50 basis-7 max-md:max-w-full">
