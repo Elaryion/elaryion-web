@@ -2,15 +2,25 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [hasScrolled, setHasScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
-      <div className="container mx-auto px-4 flex items-center justify-between p-4">
+    <nav className={`bg-white fixed w-full z-20 top-0 start-0 ${!isOpen && hasScrolled ? 'border-b border-gray-200' : ''}`}>
+      <div className="container mx-auto px-4 flex items-center justify-between p-4 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image
