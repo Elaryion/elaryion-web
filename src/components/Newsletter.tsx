@@ -19,7 +19,7 @@ export default function Newsletter({ showBackground = true }: NewsletterProps) {
           <p className="inline sm:block lg:inline xl:block">Sign up for our newsletter. </p>
         </div>
         
-        <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
+        <form action="https://formsubmit.co/planes-trunks-33@icloud.com" method="POST" className="w-full max-w-md lg:col-span-5 lg:pt-2">
           <div className="flex gap-x-4">
             <label htmlFor="email-address" className="sr-only">
               Email address
@@ -47,6 +47,10 @@ export default function Newsletter({ showBackground = true }: NewsletterProps) {
             </a>
             .
           </p>
+          <input type="hidden" name="_subject" value="New Newsletter Subscription!"></input>
+          <input type="hidden" name="_next" value="https://elaryion.vercel.app/thanks"></input>
+          <input type="hidden" name="_template" value="table"></input>
+          <input type="text" name="_honey" style={{display: 'none'}}></input>
         </form>
       </div>
     </section>

@@ -11,11 +11,6 @@ export default function ContactForm() {
     message: ''
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log(formData)
-  }
-
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -47,7 +42,7 @@ export default function ContactForm() {
 
           {/* Right Column - Form */}
           <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form action="https://formsubmit.co/planes-trunks-33@icloud.com" method="POST" className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-secondary mb-2">
@@ -55,6 +50,7 @@ export default function ContactForm() {
                   </label>
                   <input
                     type="text"
+                    name="firstName"
                     id="firstName"
                     placeholder="Your first name"
                     className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-primary"
@@ -68,6 +64,7 @@ export default function ContactForm() {
                   </label>
                   <input
                     type="text"
+                    name="lastName"
                     id="lastName"
                     placeholder="Your last name"
                     className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-primary"
@@ -84,6 +81,7 @@ export default function ContactForm() {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     id="email"
                     placeholder="email@domain.com"
                     className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-primary"
@@ -97,6 +95,7 @@ export default function ContactForm() {
                   </label>
                   <input
                     type="tel"
+                    name="phone"
                     id="phone"
                     placeholder="+49 123 456 7890"
                     className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:border-primary"
@@ -111,6 +110,7 @@ export default function ContactForm() {
                   Message
                 </label>
                 <textarea
+                  name="message"
                   id="message"
                   rows={6}
                   placeholder="Your message"
@@ -126,6 +126,9 @@ export default function ContactForm() {
               >
                 Send message
               </button>
+              <input type="hidden" name="_subject" value="New Contact Form Submission!"></input>
+              <input type="hidden" name="_next" value="https://elaryion.vercel.app/thanks"></input>
+              <input type="hidden" name="_template" value="table"></input>
             </form>
           </div>
         </div>
