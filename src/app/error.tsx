@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import { useEffect } from 'react'
-import Link from 'next/link'
+import { useEffect } from "react"
+import Link from "next/link"
 
 export default function Error({
   error,
@@ -21,7 +21,7 @@ export default function Error({
         <h1 className="text-6xl font-bold text-gray-800 mb-4">500</h1>
         <h2 className="text-2xl font-semibold text-gray-600 mb-4">Something went wrong!</h2>
         <p className="text-gray-500 mb-8">
-          We're sorry, but there was an error processing your request.
+          We"re sorry, but there was an error processing your request.
         </p>
         <div className="space-x-4">
           <button

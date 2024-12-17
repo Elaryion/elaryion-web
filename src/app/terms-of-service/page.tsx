@@ -1,10 +1,10 @@
-'use client'
+"use client"
 
-import React from 'react';
+import React from "react";
 import NavbarOther from "@/components/NavbarOther";
 import { motion } from "framer-motion";
-import Footer from '@/components/Footer';
-import Newsletter from '@/components/Newsletter';
+import Footer from "@/components/Footer";
+import Newsletter from "@/components/Newsletter";
 
 export default function TermsOfService() {
   return (
