@@ -113,7 +113,7 @@ export default function AboutPage() {
                 whileHover={{ y: -5 }}
                 className="bg-white rounded-lg overflow-hidden shadow-md"
               >
-                <div className="relative h-64 w-full">
+                <div className="relative h-48 md:h-64 w-full">
                   <Image
                     src={member.image}
                     alt={member.name}
