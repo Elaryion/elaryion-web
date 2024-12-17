@@ -27,7 +27,7 @@ export default function ChatBubble() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 100, opacity: 0 }}
-            className="bg-white rounded-lg shadow-xl w-[380px] h-[500px] flex flex-col"
+            className="bg-white rounded-lg shadow-xl w-[calc(100vw-2rem)] sm:w-[380px] max-w-[380px] h-[500px] flex flex-col mx-4 sm:mx-0"
           >
             {/* Header */}
             <div className="p-4 border-b flex justify-between items-center">
