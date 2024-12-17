@@ -154,6 +154,15 @@ export default function Navbar() {
                 Features
               </a>
             </li>
+            <li className="py-2">
+              <Link
+                href="/contact"
+                className="block text-gray-900"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
           </motion.ul>
         </motion.div>
       </div>

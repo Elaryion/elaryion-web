@@ -143,6 +143,15 @@ export default function NavbarOther() {
                 Features
               </Link>
             </li>
+            <li className="py-2">
+              <Link 
+                href="/contact" 
+                className="block text-white hover:text-blue-200 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
           </motion.ul>
         </motion.div>
       </div>
