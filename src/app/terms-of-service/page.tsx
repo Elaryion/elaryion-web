@@ -69,7 +69,7 @@ export default function TermsOfService() {
                   Disclaimer
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
-                  The materials on this website are provided on an 'as is' basis. We make no warranties, 
+                  The materials on this website are provided on an &apos;as is&apos; basis. We make no warranties, 
                   expressed or implied, and hereby disclaim and negate all other warranties including, 
                   without limitation, implied warranties or conditions of merchantability.
                 </p>

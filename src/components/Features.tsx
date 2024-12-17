@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Features() {
   const container = {
@@ -50,11 +51,12 @@ export default function Features() {
             >
               <div className="flex flex-wrap pb-4 gap-3.5 items-center w-full max-md:max-w-full">
                 <div className="flex gap-2.5 items-center self-stretch p-3.5 my-auto rounded-lg bg-slate-400 h-[50px] w-[50px]">
-                  <img
-                    loading="lazy"
+                  <Image
                     src={feature.icon}
-                    className="object-contain w-10 aspect-square"
+                    width={40}
+                    height={40}
                     alt={`${feature.title} icon`}
+                    className="object-contain"
                   />
                 </div>
                 <div className="flex-1 shrink self-stretch my-auto text-l font-semibold text-orange-50 basis-7 max-md:max-w-full">

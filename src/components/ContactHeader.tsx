@@ -16,8 +16,7 @@ export default function ContactHeader() {
             Get in Touch
           </h1>
           <p className="text-sm leading-relaxed">
-            Have questions or want to discuss your project? We're here to help. 
-            Reach out to us and let's start a conversation about how we can support your goals.
+            We&apos;re here to help. Reach out to us and let&apos;s start a conversation about how we can support your goals.
           </p>
         </motion.div>
       </div>

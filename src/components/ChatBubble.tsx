@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 export default function ChatBubble() {
   const [isOpen, setIsOpen] = useState(false)
@@ -51,7 +52,13 @@ export default function ChatBubble() {
                   transition={{ delay: 0.2 }}
                   className="flex gap-2.5 mb-4"
                 >
-                  <img src="https://pagedone.io/asset/uploads/1710412177.png" alt="Shanay" className="w-10 h-11" />
+                  <Image
+                    src="https://pagedone.io/asset/uploads/1710412177.png"
+                    width={10}
+                    height={11}
+                    alt="Shanay"
+                    className="w-10 h-11"
+                  />
                   <div className="grid">
                     <h5 className="text-gray-900 text-sm font-semibold leading-snug pb-1">Support Agent</h5>
                     <div className="w-max grid">

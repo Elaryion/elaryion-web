@@ -141,11 +141,12 @@ export default function AboutPage() {
             className="flex overflow-hidden relative gap-10 items-start py-10 px-10 rounded-xl border border-solid bg-primary border-slate-400 max-md:px-5"
           >
             <div className="flex absolute bottom-0 z-0 shrink-0 self-start h-[134px] right-[-37px] w-[134px]" />
-            <img
-              loading="lazy"
+            <Image
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9f814141612dd251600f4e7a150c2794f94c7b10382037139c67525fa05f263?placeholderIfAbsent=true&apiKey=d2d406283c114da39cee43a8cb9a1350"
+              width={56}
+              height={36}
+              alt="About section"
               className="object-contain absolute top-0 z-0 shrink-0 self-start w-56 h-36 aspect-[2.11] left-[-69px]"
-              alt="Decorative background"
             />
             <div className="flex z-0 flex-col flex-1 shrink my-auto text-orange-50 basis-12 min-w-[240px] max-md:max-w-full">
               <div className="text-2xl font-semibold max-md:max-w-full">
