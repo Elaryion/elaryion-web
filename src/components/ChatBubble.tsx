@@ -7,7 +7,7 @@ export default function ChatBubble() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="fixed bottom-4 right-0 left-0 sm:right-4 sm:left-auto z-50 flex justify-center sm:justify-end">
       <AnimatePresence>
         {!isOpen ? (
           <motion.button 
