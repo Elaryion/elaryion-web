@@ -21,7 +21,7 @@ export default function Home() {
         <Blog />
         <Footer />
       </div>
-      
+      <ChatBubble />
     </main>
   )
 }
