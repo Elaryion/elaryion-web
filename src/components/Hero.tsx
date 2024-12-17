@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export default function Hero() {
   return (
-    <section className="bg-white container mx-auto px-4 py-12 sm:py-20 md:py-36 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 font-poppins">
+    <section className="bg-white container mx-auto px-4 py-12 sm:py-20 md:py-36 flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-4 font-poppins">
       <motion.div
         className="md:w-1/2"
         initial={{ opacity: 0, x: -50 }}
@@ -28,7 +28,7 @@ export default function Hero() {
         </motion.button>
       </motion.div>
       <motion.div
-        className="md:w-1/2 flex justify-center mt-8 md:mt-0"
+        className="md:w-1/2 flex justify-center mb-8 md:mb-0"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}

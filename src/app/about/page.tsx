@@ -132,38 +132,36 @@ export default function AboutPage() {
       </section>
 
       {/* Join Section */}
-      <section>
-        <div className="flex flex-col py-32 px-32 max-md:pl-5">
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="flex overflow-hidden relative gap-10 items-start py-10 px-10 rounded-xl border border-solid bg-primary border-slate-400 max-md:px-5"
-          >
-            <div className="flex absolute bottom-0 z-0 shrink-0 self-start h-[134px] right-[-37px] w-[134px]" />
-            <Image
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9f814141612dd251600f4e7a150c2794f94c7b10382037139c67525fa05f263?placeholderIfAbsent=true&apiKey=d2d406283c114da39cee43a8cb9a1350"
-              width={56}
-              height={36}
-              alt="About section"
-              className="object-contain absolute top-0 z-0 shrink-0 self-start w-56 h-36 aspect-[2.11] left-[-69px]"
-            />
-            <div className="flex z-0 flex-col flex-1 shrink my-auto text-orange-50 basis-12 min-w-[240px] max-md:max-w-full">
-              <div className="text-2xl font-semibold max-md:max-w-full">
-                Join Our Team
-              </div>
-              <div className="mt-3.5 text-sm font-medium leading-7 max-md:max-w-full">
-                We are always on the lookout for talented individuals who are
-                enthusiastic about making a difference. Explore our career
-                opportunities and join us in our mission to help people achieve
-                their health and wellness goals.
-              </div>
+      <section className="py-16 md:py-32 px-4 md:px-32">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="flex flex-col md:flex-row overflow-hidden relative gap-4 md:gap-10 items-center md:items-start py-6 md:py-10 px-6 md:px-10 rounded-xl border border-solid bg-primary border-slate-400"
+        >
+          <div className="hidden md:flex absolute bottom-0 z-0 shrink-0 self-start h-[134px] right-[-37px] w-[134px]" />
+          <Image
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9f814141612dd251600f4e7a150c2794f94c7b10382037139c67525fa05f263?placeholderIfAbsent=true&apiKey=d2d406283c114da39cee43a8cb9a1350"
+            width={56}
+            height={36}
+            alt="About section"
+            className="hidden md:block object-contain absolute top-0 z-0 shrink-0 self-start w-56 h-36 aspect-[2.11] left-[-69px]"
+          />
+          <div className="flex z-0 flex-col flex-1 text-center md:text-left shrink my-auto text-orange-50 basis-12">
+            <div className="text-xl md:text-2xl font-semibold">
+              Join Our Team
             </div>
-            <div className="gap-2 self-stretch px-6 py-5 my-auto text-sm font-semibold bg-tertiary rounded-lg text-neutral-800 max-md:px-5">
-              Apply Now
+            <div className="mt-3.5 text-sm font-medium leading-7">
+              We are always on the lookout for talented individuals who are
+              enthusiastic about making a difference. Explore our career
+              opportunities and join us in our mission to help people achieve
+              their health and wellness goals.
             </div>
-          </motion.div>
-        </div>
+          </div>
+          <button className="mt-4 md:mt-0 gap-2 px-6 py-3 text-sm font-semibold bg-tertiary rounded-lg text-neutral-800 hover:bg-tertiary/90 transition-colors">
+            Apply Now
+          </button>
+        </motion.div>
       </section>
 
       <Footer />
