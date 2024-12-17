@@ -100,21 +100,34 @@ export default function Navbar() {
         </button>
 
         {/* Mobile Menu */}
-        <div className={`${isOpen ? 'block' : 'hidden'} absolute top-full left-0 right-0 md:hidden bg-white border-b border-gray-200 z-50`}>
+        <motion.div
+          initial={false}
+          animate={{ height: isOpen ? 'auto' : 0 }}
+          transition={{
+            duration: 0.4,
+            ease: "easeInOut"
+          }}
+          className="absolute top-full left-0 right-0 md:hidden bg-white border-b border-gray-200 z-50 overflow-hidden"
+        >
           <motion.ul
             initial={false}
-            animate={isOpen ? 'open' : 'closed'}
-            variants={{
-              open: { opacity: 1, height: 'auto' },
-              closed: { opacity: 0, height: 0 },
+            animate={{
+              opacity: isOpen ? 1 : 0,
+              y: isOpen ? 0 : -20
             }}
-            transition={{ duration: 0.3 }}
-            className="flex flex-col p-4 font-medium overflow-hidden"
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+              opacity: { duration: 0.2 },
+              y: { duration: 0.3 }
+            }}
+            className="flex flex-col p-4 font-medium"
           >
             <li className="py-2">
               <Link
                 href="/"
                 className="block text-gray-900"
+                onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
@@ -123,6 +136,7 @@ export default function Navbar() {
               <Link
                 href="/about"
                 className="block text-gray-900"
+                onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
@@ -133,6 +147,7 @@ export default function Navbar() {
                 onClick={(e) => {
                   e.preventDefault();
                   document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+                  setIsOpen(false);
                 }}
                 className="block text-gray-900"
               >
@@ -140,7 +155,7 @@ export default function Navbar() {
               </a>
             </li>
           </motion.ul>
-        </div>
+        </motion.div>
       </div>
     </nav>
   )

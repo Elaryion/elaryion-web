@@ -93,31 +93,28 @@ export default function NavbarOther() {
         </button>
 
         {/* Mobile Menu */}
-        <div
-          className={`${
-            isOpen ? 'block' : 'hidden'
-          } absolute top-full left-0 w-full md:hidden bg-[#799DBD] shadow-lg z-50`}
+        <motion.div
+          initial={false}
+          animate={{ height: isOpen ? 'auto' : 0 }}
+          transition={{
+            duration: 0.4,
+            ease: "easeInOut"
+          }}
+          className="absolute top-full left-0 w-full md:hidden bg-[#799DBD] shadow-lg z-50 overflow-hidden"
         >
           <motion.ul
             initial={false}
-            animate={isOpen ? 'open' : 'closed'}
-            variants={{
-              open: { 
-                opacity: 1, 
-                height: 'auto',
-                transition: {
-                  duration: 0.3
-                }
-              },
-              closed: { 
-                opacity: 0, 
-                height: 0,
-                transition: {
-                  duration: 0.3
-                }
-              }
+            animate={{
+              opacity: isOpen ? 1 : 0,
+              y: isOpen ? 0 : -20
             }}
-            className="flex flex-col p-4 font-medium overflow-hidden"
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+              opacity: { duration: 0.2 },
+              y: { duration: 0.3 }
+            }}
+            className="flex flex-col p-4 font-medium"
           >
             <li className="py-2">
               <Link 
@@ -147,7 +144,7 @@ export default function NavbarOther() {
               </Link>
             </li>
           </motion.ul>
-        </div>
+        </motion.div>
       </div>
     </nav>
   )
