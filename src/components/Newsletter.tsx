@@ -1,22 +1,54 @@
-export default function Newsletter() {
+interface NewsletterProps {
+  showBackground?: boolean;
+}
+
+export default function Newsletter({ showBackground = true }: NewsletterProps) {
+  const backgroundStyle = showBackground
+    ? {
+        backgroundImage: 'url(https://i.hizliresim.com/4zvzha0.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }
+    : {};
+
   return (
-    <section className="bg-primary py-16" style={{ backgroundImage: 'url(https://i.hizliresim.com/4zvzha0.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl text-white font-semibold mb-6">Join To Our Newsletter</h2>
-        <p className="text-white mb-8 max-w-2xl mx-auto">
-          Stay updated with our latest developments and skincare tips. Subscribe to our newsletter for exclusive content.
-        </p>
-        <div className="max-w-md mx-auto flex gap-4">
-          <input
-            type="email"
-            placeholder="Your email"
-            className="flex-1 px-4 py-2 rounded-md border border-secondary/20 focus:outline-none focus:border-primary"
-          />
-          <button className="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary-hover">
-            Subscribe
-          </button>
+    <section className="bg-[#799DBC] py-12 sm:py-20 lg:py-32" style={backgroundStyle}>
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
+        <div className="max-w-xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:col-span-7">
+          <h2 className="inline sm:block lg:inline xl:block">Want product news and updates?</h2>
+          <p className="inline sm:block lg:inline xl:block">Sign up for our newsletter.</p>
         </div>
+        
+        <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
+          <div className="flex gap-x-4">
+            <label htmlFor="email-address" className="sr-only">
+              Email address
+            </label>
+            <input
+              id="email-address"
+              name="email"
+              type="email"
+              autoComplete="email"
+              required
+              className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 placeholder:text-white"
+              placeholder="Enter your email"
+            />
+            <button
+              type="submit"
+              className="flex rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#799DBD] shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+            >
+              Subscribe
+            </button>
+          </div>
+          <p className="mt-4 text-sm leading-6 text-gray-300">
+            We care about your data. Read our{' '}
+            <a href="/privacy-policy" className="font-semibold text-white">
+              privacy&nbsp;policy
+            </a>
+            .
+          </p>
+        </form>
       </div>
     </section>
-  )
+  );
 } 

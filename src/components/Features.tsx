@@ -20,7 +20,7 @@ export default function Features() {
   }
 
   return (
-    <section className="py-36 max-w-[85rem] mx-auto">
+    <section id="features" className="py-36 max-w-[85rem] mx-auto">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-12"

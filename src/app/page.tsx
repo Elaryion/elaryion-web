@@ -5,6 +5,7 @@ import Newsletter from '@/components/Newsletter'
 import FAQ from '@/components/FAQ'
 import Blog from '@/components/Blog'
 import Footer from '@/components/Footer'
+import ChatBubble from '@/components/ChatBubble'
 
 export default function Home() {
   return (
@@ -14,12 +15,14 @@ export default function Home() {
       {/* Add padding to account for fixed navbar */}
       <div className="pt-16 bg-white">
         <Hero />
-        <Features />
+        <Features/>
         <Newsletter />
         <FAQ />
         <Blog />
         <Footer />
       </div>
+      
+      <ChatBubble />
     </main>
   )
 }

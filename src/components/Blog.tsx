@@ -54,7 +54,7 @@ export default function Blog() {
                 <p className="mt-3 text-gray-800">
                   {post.excerpt}
                 </p>
-                <p className="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline font-medium">
+                <p className="mt-5 inline-flex items-center gap-x-1 text-sm text-[#799DBC] decoration-2 group-hover:underline font-medium">
                   Read more
                   <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="m9 18 6-6-6-6"/>
@@ -65,6 +65,7 @@ export default function Blog() {
           </motion.div>
         ))}
       </div>
+      <br /><br /><br /><br />
     </section>
   )
 }

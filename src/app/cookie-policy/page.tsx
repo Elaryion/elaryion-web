@@ -1,12 +1,38 @@
+'use client'
+
+import React from 'react';
+import NavbarOther from "@/components/NavbarOther";
+
+import { motion } from "framer-motion";
+import Footer from '@/components/Footer';
+import Newsletter from '@/components/Newsletter';
+
 export default function CookiePolicy() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <main>
+      <NavbarOther />
+      {/* Hero Section */}
+      <section className="py-40" style={{ backgroundImage: "url('https://i.hizliresim.com/rxrnmdp.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="container mx-auto px-4">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration:0.6 }}
+            className="max-w-3xl text-white pl-6 border-l-4 border-white"
+          >
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Cookie Policy
+            </h1>
+            <p className="text-sm leading-relaxed">
+              At Elaryion, we value your privacy and aim to be transparent about how we use cookies on our website. This policy explains what cookies are, how we use them, and how you can control them.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-emerald-600">
-            Cookie Policy
-          </h1>
-
+          
           <div className="space-y-8">
             <section className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
@@ -62,8 +88,11 @@ export default function CookiePolicy() {
               </p>
             </section>
           </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </div>  
+      <Newsletter showBackground={false} /> 
+      <Footer />
+    </main>
   );
 } 

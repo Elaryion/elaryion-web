@@ -5,11 +5,16 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
-export default function Navbar() {
+export default function NavbarOther() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleMenuClick = () => {
+    setIsOpen(!isOpen)
+    console.log('Menu clicked, isOpen:', !isOpen) // Debug için
+  }
+
   return (
-    <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+    <nav className="w-full z-20 start-0 bg-[#799DBD] relative">
       <div className="container mx-auto px-4 flex items-center justify-between p-4">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -20,7 +25,7 @@ export default function Navbar() {
             height={32}
             className="h-8"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap">Elaryion</span>
+          <span className="self-center text-white text-2xl font-semibold whitespace-nowrap">Elaryion</span>
         </Link>
 
         {/* Center Navigation */}
@@ -29,7 +34,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/"
-                className="text-gray-900 font-medium"
+                className="text-white font-medium"
               >
                 Home
               </Link>
@@ -37,18 +42,15 @@ export default function Navbar() {
             <li>
               <Link
                 href="/about"
-                className="text-gray-900 font-medium"
+                className="text-white  font-medium"
               >
                 About
               </Link>
             </li>
             <li>
               <a
-                href="#features"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-                }}
+                href="/#features"
+                className="text-white font-medium"
               >
                 Features
               </a>
@@ -60,16 +62,17 @@ export default function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="px-12 py-2 text-white bg-[#799DBD] rounded-lg transition-colors font-medium"
+            className="px-12 py-2 text-[#799DBD] bg-white rounded-xl transition-colors font-medium"
           >
             Contact
           </Link>
         </div>
 
+
         {/* Mobile Menu Button */}
         <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          onClick={handleMenuClick}
+          className="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-white rounded-lg hover:bg-[#8BAECF] focus:outline-none focus:ring-2 focus:ring-gray-200"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -90,41 +93,55 @@ export default function Navbar() {
         </button>
 
         {/* Mobile Menu */}
-        <div className={`${isOpen ? 'block' : 'hidden'} absolute top-full left-0 right-0 md:hidden bg-white border-b border-gray-200 z-50`}>
+        <div
+          className={`${
+            isOpen ? 'block' : 'hidden'
+          } absolute top-full left-0 w-full md:hidden bg-[#799DBD] shadow-lg z-50`}
+        >
           <motion.ul
             initial={false}
             animate={isOpen ? 'open' : 'closed'}
             variants={{
-              open: { opacity: 1, height: 'auto' },
-              closed: { opacity: 0, height: 0 },
+              open: { 
+                opacity: 1, 
+                height: 'auto',
+                transition: {
+                  duration: 0.3
+                }
+              },
+              closed: { 
+                opacity: 0, 
+                height: 0,
+                transition: {
+                  duration: 0.3
+                }
+              }
             }}
-            transition={{ duration: 0.3 }}
             className="flex flex-col p-4 font-medium overflow-hidden"
           >
             <li className="py-2">
-              <Link
-                href="/"
-                className="block text-gray-900"
+              <Link 
+                href="/" 
+                className="block text-white hover:text-blue-200 transition-colors"
+                onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
             </li>
             <li className="py-2">
-              <Link
-                href="/about"
-                className="block text-gray-900"
+              <Link 
+                href="/about" 
+                className="block text-white hover:text-blue-200 transition-colors"
+                onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
             </li>
             <li className="py-2">
-              <a
-                href="#features"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="block text-gray-900"
+              <a 
+                href="/#features" 
+                className="block text-white hover:text-blue-200 transition-colors"
+                onClick={() => setIsOpen(false)}
               >
                 Features
               </a>

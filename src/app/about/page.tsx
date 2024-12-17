@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
+import NavbarOther from '@/components/NavbarOther'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
@@ -37,7 +37,7 @@ const teamMembers: TeamMember[] = [
 export default function AboutPage() {
   return (
     <main>
-      <Navbar />
+      <NavbarOther />
       {/* Hero Section */}
       <section className="py-40" style={{ backgroundImage: "url('https://i.hizliresim.com/rxrnmdp.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container mx-auto px-4">
@@ -45,13 +45,13 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl text-white"
+            className="max-w-3xl text-white pl-6 border-l-4 border-white"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Meet Our Team of Experts
+              Meet Our Team
             </h1>
             <p className="text-sm leading-relaxed">
-              Our team at Maxwell is composed of highly skilled professionals who are passionate about helping you achieve your business goals. With a diverse range of expertise in AI and technology, our team is dedicated to providing you with the guidance and personalized solutions you need.
+              Our team at Elaryion is composed of highly skilled professionals who are passionate about helping you achieve your business goals. With a diverse range of expertise in AI and technology, our team is dedicated to providing you with the guidance and personalized solutions you need.
             </p>
           </motion.div>
         </div>

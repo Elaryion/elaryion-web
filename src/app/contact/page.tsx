@@ -2,15 +2,16 @@ import ContactForm from '@/components/ContactForm'
 import ContactHeader from '@/components/ContactHeader'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import NavbarOther from '@/components/NavbarOther'
 import Newsletter from '@/components/Newsletter'
 
 export default function ContactPage() {
   return (
     <main className="min-h-screen">
-      <Navbar />
+      <NavbarOther />
       <ContactHeader />
       <ContactForm />
-      <Newsletter />
+      <Newsletter showBackground={false} />
       <Footer />
     </main>
   )
