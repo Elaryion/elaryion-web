@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 export default function Footer() {
@@ -15,7 +16,10 @@ export default function Footer() {
         >
           {/* Company Info */}
           <div>
-            <h3 className="font-bold text-xl mb-4">Elaryion</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <Image src="/logo.png" alt="Elaryion" width={50} height={50} />
+              <h3 className="font-bold text-xl">Elaryion</h3>
+            </div>
             <p className="text-white text-sm">
               Elaryion is a platform that helps you to know your skin and discover your beauty.
             </p>
@@ -54,10 +58,9 @@ export default function Footer() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <li><Link href="#" className="text-white  ">Skin Analysis</Link></li>
-              <li><Link href="#" className="text-white  ">Nutrition Plans</Link></li>
-              <li><Link href="#" className="text-white  ">All Services</Link></li>
-              <li><Link href="#" className="text-white  ">Our Process</Link></li>
+              <li><Link href="/#features" className="text-white  ">Skin Analysis</Link></li>
+              <li><Link href="/#features" className="text-white  ">Nutrition Plans</Link></li>
+              <li><Link href="/#features" className="text-white  ">All Services</Link></li>
             </motion.ul>
           </div>
 
@@ -70,10 +73,9 @@ export default function Footer() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <li><Link href="#" className="text-white  ">About Us</Link></li>
-              <li><Link href="#" className="text-white  ">Careers</Link></li>
-              <li><Link href="#" className="text-white  ">News</Link></li>
-              <li><Link href="#" className="text-white  ">Contact</Link></li>
+              <li><Link href="/about" className="text-white  ">About Us</Link></li>
+              <li><Link href="/about" className="text-white  ">Careers</Link></li>
+              <li><Link href="/contact" className="text-white  ">Contact</Link></li>
             </motion.ul>
           </div>
         </motion.div>
