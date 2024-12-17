@@ -140,13 +140,21 @@ export default function AboutPage() {
           className="flex flex-col md:flex-row overflow-hidden relative gap-4 md:gap-10 items-center md:items-start py-6 md:py-10 px-6 md:px-10 rounded-xl border border-solid bg-primary border-slate-400"
         >
           <div className="hidden md:flex absolute bottom-0 z-0 shrink-0 self-start h-[134px] right-[-37px] w-[134px]" />
-          <Image
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9f814141612dd251600f4e7a150c2794f94c7b10382037139c67525fa05f263?placeholderIfAbsent=true&apiKey=d2d406283c114da39cee43a8cb9a1350"
-            width={56}
-            height={36}
-            alt="About section"
+          <svg 
+            width="156" 
+            height="108" 
+            viewBox="0 0 156 108" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
             className="hidden md:block object-contain absolute top-0 z-0 shrink-0 self-start w-56 h-36 aspect-[2.11] left-[-69px]"
-          />
+          >
+            <path 
+              d="M22.9222 -37.859L102.547 5.66062L22.8934 -19.1628L99.2867 22.5777L-26.7642 -22.5146L154.425 66.6055L-68.8149 -15.6194L102.457 64.069L-26.8384 25.6587L78.1799 78.9067L-19.2469 45.8678L43.4905 105.465" 
+              stroke="#9CCFD8" 
+              strokeWidth="5.12" 
+              strokeDasharray="1.35 1.35"
+            />
+          </svg>
           <div className="flex z-0 flex-col flex-1 text-center md:text-left shrink my-auto text-orange-50 basis-12">
             <div className="text-xl md:text-2xl font-semibold">
               Join Our Team

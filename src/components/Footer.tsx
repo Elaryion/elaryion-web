@@ -7,7 +7,6 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="border-t border-white my-4"></div>
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-4 gap-8 py-24"
           initial={{ opacity: 0, y: 20 }}
@@ -18,7 +17,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-xl mb-4">Elaryion</h3>
             <p className="text-white text-sm">
-              We help you to put business web presence on another level.
+              Elaryion is a platform that helps you to know your skin and discover your beauty.
             </p>
             <div className="mt-4 flex space-x-4">
               <Link href="#" className="text-white  ">

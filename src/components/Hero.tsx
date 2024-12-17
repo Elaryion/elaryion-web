@@ -23,6 +23,7 @@ export default function Hero() {
           className="bg-primary text-white px-4 sm:px-6 py-2 rounded-md hover:bg-primary-hover text-sm sm:text-base"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => window.open('https://github.com/Elaryion/elaryion-mobile', '_blank')}
         >
           Download
         </motion.button>
