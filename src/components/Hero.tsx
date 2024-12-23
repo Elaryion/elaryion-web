@@ -13,12 +13,12 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
-        Know Your Skin, Embrace Your Glow!
+          Know Your Skin, Embrace Your Glow!
         </h1>
         <p className="text-secondary text-sm sm:text-base mb-6 max-w-xl">
-          Discover the advanced science behind flawless skin. Elaryion's innovative app delivers cutting-
-edge skin analysis and customized care solutions, empowering you to unlock your skin's true
-potential. Start your journey to radiant beauty today!
+          Discover the advanced science behind flawless skin. Elaryion&apos;s innovative app delivers cutting-
+          edge skin analysis and customized care solutions, empowering you to unlock your skin&apos;s true
+          potential. Start your journey to radiant beauty today!
         </p>
         <motion.button
           className="bg-primary text-white px-4 sm:px-6 py-2 rounded-md hover:bg-primary-hover text-sm sm:text-base"
