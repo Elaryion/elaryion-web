@@ -206,8 +206,8 @@ empower you to look and feel your best.
               Join Our Team
             </div>
             <div className="mt-3.5 text-sm font-medium leading-7">
-            Are you passionate about innovation and skincare? At Elaryion, we're always looking for talented
-individuals who are driven to make a difference. Be a part of a forward-thinking team that's
+            Are you passionate about innovation and skincare? At Elaryion, we&apos;re always looking for talented
+individuals who are driven to make a difference. Be a part of a forward-thinking team that&apos;s
 transforming the skincare industry through advanced AI and cutting-edge technology. Explore
 our career opportunities and help us empower people to achieve their best skin yet
             </div>

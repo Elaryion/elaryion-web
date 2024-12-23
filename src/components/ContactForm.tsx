@@ -23,7 +23,7 @@ export default function ContactForm() {
               and Assistance
             </h2>
                 <p className="text-secondary mb-8">
-                  We'd love to hear from you! Whether you have questions about our services, need assistance, or just want to share your feedback, our team is here to help you achieve your skincare goals.
+                  We&apos;d love to hear from you! Whether you have questions about our services, need assistance, or just want to share your feedback, our team is here to help you achieve your skincare goals.
                 </p>
             <div className="space-y-6">
               <div className="flex items-center gap-4">

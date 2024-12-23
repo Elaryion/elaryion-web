@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     question: "How does Elaryion analyze my skin?",
-    answer: "Our app uses cutting-edge AI and high-resolution image processing to assess your skin’s type, condition, and specific concerns, such as dryness, acne, or aging."
+    answer: "Our app uses cutting-edge AI and high-resolution image processing to assess your skins type, condition, and specific concerns, such as dryness, acne, or aging."
   },
   {
     question: "What kind of recommendations will I receive?",
