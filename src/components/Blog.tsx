@@ -15,7 +15,7 @@ export default function Blog() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Our Blog For You
+          Our Blog: Your Skin’s Best Ally
         </motion.h2>
         <motion.p 
           className="mt-1 text-gray-600"
@@ -23,7 +23,7 @@ export default function Blog() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Stay updated with the latest insights from our mental health experts
+          Stay informed with the latest insights, tips, and trends from skincare experts to help you achieve and maintain your best skin ever.
         </motion.p>
       </div>
 
@@ -37,17 +37,18 @@ export default function Blog() {
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
           >
-            <Link href={post.link} className="group flex flex-col focus:outline-none">
-              <div className="relative pt-[70%] rounded-xl overflow-hidden">
+            <Link href={post.link} className="group flex flex-col h-full focus:outline-none">
+              <div className="relative w-full rounded-xl overflow-hidden aspect-square">
                 <Image
                   src={post.image}
                   alt={post.title}
                   fill
-                  className="absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+                  className="absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
 
-              <div className="mt-7">
+              <div className="mt-7 flex-1">
                 <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
                   {post.title}
                 </h3>
@@ -72,21 +73,21 @@ export default function Blog() {
 
 const blogPosts = [
   {
-    title: "How Mental Health Consultants Can Help...",
-    excerpt: "Learn more about the role of mental health consultants in promoting wellness and creating positive change in organizations and communities.",
-    image: "/get-on-top-of-mental-health-early.webp",
+    title: "How Personalized Skincare Can Transform Your Routine",
+    excerpt: "Discover the power of personalized skincare and how it adapts to your unique skin type and concerns, ensuring a regimen that truly works.",
+    image: "/post1.png",
     link: "/blog/post-1"
   },
   {
-    title: "Understanding Workplace Mental Health",
-    excerpt: "Discover effective strategies for maintaining mental well-being in the workplace and creating a supportive environment for all employees.",
-    image: "/get-on-top-of-mental-health-early.webp",
+    title: "Debunking Skincare Myths: What Really Works",
+    excerpt: "Separate fact from fiction with our expert take on common skincare myths and learn how to make smarter, evidence-based choices for your skin.",
+    image: "/post2.png",
     link: "/blog/post-2"
   },
   {
-    title: "The Impact of Mental Health Support",
-    excerpt: "Explore how professional mental health support can transform lives and contribute to building stronger, more resilient communities.",
-    image: "/get-on-top-of-mental-health-early.webp",
+    title: "The Role of Technology in Modern Skincare",
+    excerpt: "Explore how cutting-edge technology, like Elaryion's skin analysis app, is reshaping the way we approach skin health and beauty.",
+    image: "/post3.png",
     link: "/blog/post-3"
   }
 ] 

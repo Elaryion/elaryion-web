@@ -31,7 +31,9 @@ export default function Features() {
         >
           <h2 className="text-3xl text-black font-semibold mb-2">Features</h2>
           <p className="text-black/80">
-            Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and wellness.
+          Welcome to the Features section of Elaryion, where advanced technology meets personalized
+skincare solutions. Explore how Elaryion transforms your skincare journey with these powerful
+tools:
           </p>
         </motion.div>
         <motion.div 
@@ -76,33 +78,33 @@ export default function Features() {
 
 const features = [
   {
-    icon: "/icons/plant.svg",
-    title: "Personalized Nutrition Plans",
-    description: "Receive a tailored nutrition plan designed specifically for your body and goals. Our certified nutritionists will consider your unique needs, dietary preferences, and health conditions to create a plan that helps you best."
+    icon: "/icons/skincare.svg",
+    title: "Personalized Skincare Plans",
+    description: "Your skin is unique, and your care should be too. Elaryion's app uses state-of-the-art algorithms to analyze your skin type, conditions, and personal preferences. Based on this data, it delivers a customized skincare plan designed to help you achieve radiant, healthy skin."
   },
   {
-    icon: "/icons/graduationcap.svg",
-    title: "Guidance from Certified Nutritionists",
-    description: "Our team of experienced and certified nutritionists will provide professional guidance and support throughout your journey. They will answer your questions, address your concerns, and keep you motivated as you work towards your goals."
+    icon: "/icons/chart.svg",
+    title: "Comprehensive Skin Health Tracking and Analysis",
+    description: "Understand your skin like never before. By combining regular photo analysis and data from your inputs, the app tracks your skin's progress, identifying improvements and areas for further care. Get real-time insights to adjust your routine effectively."
   },
   {
     icon: "/icons/fork-knife.svg",
-    title: "Food Tracking and Analysis",
-    description: "Effortlessly track your food intake using our user-friendly app. Our nutritionists will analyze your data to provide insights into your eating habits, help you identify areas for improvement, and make personalized recommendations."
+    title: "Expert Guidance from Dermatology Professionals",
+    description: "Have questions or concerns? Elaryion connects you with certified dermatologists and skincare specialists who provide tailored advice, product recommendations, and guidance based on your skin's needs. Confidence in care starts here."
   },
   {
     icon: "/icons/plan.svg",
-    title: "Meal Planning and Recipes",
-    description: "Access a vast collection of delicious and healthy recipes tailored to your dietary needs. Our nutritionists will also create personalized meal plans, making it easier for you to stay on track and enjoy nutritious meals."
+    title: "Tailored Product Recommendations",
+    description: "Say goodbye to guesswork in skincare shopping. The app identifies and recommends products specifically suited to your skin’s needs, ensuring you invest only in solutions that truly work."
   },
   {
     icon: "/icons/dumbbell.svg",
-    title: "Lifestyle and Behavior Coaching",
-    description: "Achieving sustainable results requires more than just a diet plan. Our nutritionists will work with you to develop healthy habits, address emotional eating, and provide strategies to overcome obstacles along the way."
+    title: "Lifestyle Integration for Holistic Skin Health",
+    description: "Healthy skin goes beyond products. Our app also offers lifestyle tips—focusing on nutrition, hydration, sleep, and stress management—so you can improve your skin from the inside out."
   },
   {
     icon: "/icons/backpack.svg",
-    title: "Nutritional Education and Workshops",
-    description: "Expand your knowledge of nutrition through informative articles and educational workshops. Our nutritionists will equip you with the knowledge and tools to make informed choices for long-term success."
+    title: "Educational Resources and Skincare Workshops",
+    description: "Take control of your skin journey by learning from the experts. Elaryion offers access to in-depth guides, video tutorials, and live workshops on topics like tackling acne, reducing pigmentation, anti-aging techniques, and building the perfect skincare routine."
   }
 ] 

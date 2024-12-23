@@ -15,7 +15,7 @@ export default function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Navigating Mental Health Consultation Commonly Asked Questions
+          Navigating Skincare with Elaryion: Frequently Asked Questions
         </motion.h2>
         <div className="max-w-[55rem] mx-auto space-y-4">
           {faqs.map((faq, index) => (
@@ -63,19 +63,23 @@ export default function FAQ() {
 
 const faqs = [
   {
-    question: "What is a mental health consultant?",
-    answer: "A mental health consultant is a professional who provides guidance and support for mental health concerns..."
+    question: "What is Elaryion?",
+    answer: "Elaryion is an innovative skincare app that uses advanced technology to analyze your skin and provide personalized skincare solutions tailored to your unique needs."
   },
   {
-    question: "What services do you offer as a mental health consultant?",
-    answer: "Our services include individual counseling, group therapy, mental health assessments..."
+    question: "How does Elaryion analyze my skin?",
+    answer: "Our app uses cutting-edge AI and high-resolution image processing to assess your skin’s type, condition, and specific concerns, such as dryness, acne, or aging."
   },
   {
-    question: "How can I benefit from working with a mental health consultant?",
-    answer: "Working with a mental health consultant can help you develop coping strategies..."
+    question: "What kind of recommendations will I receive?",
+    answer: "You’ll get customized skincare routines, product recommendations, and actionable tips to improve your skin’s health and appearance."
   },
   {
-    question: "What types of issues can a mental health consultant help with?",
-    answer: "Mental health consultants can help with anxiety, depression, stress management..."
-  }
+    question: "Can Elaryion help with specific skin concerns?",
+    answer: "Yes! Whether you’re dealing with acne, hyperpigmentation, fine lines, or sensitivity, our app is designed to help you address your unique concerns effectively"
+  },
+  {
+    question: "Is Elaryion suitable for all skin types?",
+    answer: "Absolutely! Elaryion caters to all skin types and works to provide tailored solutions based on your individual skin profile."
+  },
 ] 

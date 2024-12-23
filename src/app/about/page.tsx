@@ -13,24 +13,29 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: 'Sarah Mitchell',
+    name: 'Yared',
     role: 'Founder and CEO',
-    image: '/team/sarah.jpg'
+    image: '/team/yared.png'
   },
   {
-    name: 'Emily Thompson',
+    name: 'A. (G.) V',
     role: 'Chief Operating Officer',
-    image: '/team/emily.jpg'
+    image: '/team/agv.png'
   },
   {
-    name: 'John Davis',
+    name: 'Ömer',
+    role: 'Chief Developer',
+    image: '/team/omer.png'
+  },
+  {
+    name: 'Danylo',
+    role: 'Chief AI Officer',
+    image: '/team/danylo.png'
+  },
+  {
+    name: 'Liana',
     role: 'Chief Finance Officer',
-    image: '/team/john.jpg'
-  },
-  {
-    name: 'Rachel Adams',
-    role: 'Chief Marketing Officer',
-    image: '/team/rachel.jpg'
+    image: '/team/liana.png'
   }
 ]
 
@@ -48,10 +53,13 @@ export default function AboutPage() {
             className="max-w-3xl text-white pl-4 md:pl-6 border-l-2 md:border-l-4 border-white"
           >
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
-              Meet Our Team
+            Meet the Minds Behind Elaryion
             </h1>
             <p className="text-sm md:text-base leading-relaxed">
-              Our team at Elaryion is composed of highly skilled professionals who are passionate about helping you achieve your business goals. With a diverse range of expertise in AI and technology, our team is dedicated to providing you with the guidance and personalized solutions you need.
+            At Elaryion, our team of dedicated skincare enthusiasts, AI experts, and dermatology specialists
+work together to revolutionize how you care for your skin. With a shared passion for innovation
+and a deep understanding of skin science, we strive to create technology-driven solutions that
+empower you to look and feel your best.
             </p>
           </motion.div>
         </div>
@@ -69,24 +77,62 @@ export default function AboutPage() {
             Our Values
           </motion.h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[0, 1, 2].map((index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-                className="text-center p-6"
-              >
-                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Innovation</h3>
-                <p className="text-gray-600">We constantly push boundaries to deliver cutting-edge AI solutions.</p>
-              </motion.div>
-            ))}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="text-center p-6"
+            >
+              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Innovation</h3>
+              <p className="text-gray-600">
+              We constantly push boundaries to deliver cutting-edge AI solutions that revolutionize
+              skincare, ensuring your beauty journey is smarter, faster, and more effective.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="text-center p-6"
+            >
+              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Empowerment</h3>
+              <p className="text-gray-600">
+              We believe in empowering individuals to take control of their skincare with personalized
+              tools and expert knowledge tailored to their unique needs.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.6 }}
+              className="text-center p-6"
+            >
+              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Sustainability</h3>
+              <p className="text-gray-600">
+              Caring for your skin and the planet go hand in hand. We prioritize eco-friendly practices
+              and sustainable solutions in everything we do.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -102,7 +148,7 @@ export default function AboutPage() {
           >
             Our Team
           </motion.h2>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-5 gap-8">
             {teamMembers.map((member, index) => (
               <motion.div
                 key={member.name}
@@ -160,10 +206,10 @@ export default function AboutPage() {
               Join Our Team
             </div>
             <div className="mt-3.5 text-sm font-medium leading-7">
-              We are always on the lookout for talented individuals who are
-              enthusiastic about making a difference. Explore our career
-              opportunities and join us in our mission to help people achieve
-              their health and wellness goals.
+            Are you passionate about innovation and skincare? At Elaryion, we're always looking for talented
+individuals who are driven to make a difference. Be a part of a forward-thinking team that's
+transforming the skincare industry through advanced AI and cutting-edge technology. Explore
+our career opportunities and help us empower people to achieve their best skin yet
             </div>
           </div>
           <button className="mt-4 md:mt-0 gap-2 px-6 py-3 text-sm font-semibold bg-tertiary rounded-lg text-neutral-800 hover:bg-tertiary/90 transition-colors">

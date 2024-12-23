@@ -11,8 +11,6 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
-      {/* Add padding to account for fixed navbar */}
       <div className="pt-16 bg-white">
         <Hero />
         <Features/>

@@ -22,10 +22,9 @@ export default function ContactForm() {
               Personalized Support<br />
               and Assistance
             </h2>
-            <p className="text-secondary mb-8">
-              Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla diam lorem non mauris.
-            </p>
-            
+                <p className="text-secondary mb-8">
+                  We'd love to hear from you! Whether you have questions about our services, need assistance, or just want to share your feedback, our team is here to help you achieve your skincare goals.
+                </p>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
