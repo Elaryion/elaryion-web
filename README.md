@@ -11,6 +11,14 @@ A modern landing page built with Next.js for a skin health and beauty applicatio
 - FAQ section
 - Feature highlights
 
+## Screenshots
+
+![Homepage](screenshots/screenshot_1.png)
+![Features](screenshots/screenshot_2.png)
+![About](screenshots/screenshot_3.png)
+![Contact](screenshots/screenshot_4.png)
+
+
 ## Getting Started
 
 First, run the development server:
